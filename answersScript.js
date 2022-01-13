@@ -45,14 +45,14 @@ const kahootId = new URL(document.location).searchParams.get("id");
           choicesArr.push(`
             <div class="answer">
               <img
-                src="https://raw.githubusercontent.com/LilleAila/Images/main/${image}.png"
+                src="./images/${image}.png"
                 class="${imageClass}"
               />
               ${choices[a].answer}
               <br/>
               ${
                 choices[a].correct
-                  ? `<img src="https://raw.githubusercontent.com/LilleAila/Images/main/checkmark.png" class="checkmark" />`
+                  ? `<img src="./images/checkmark.png" class="checkmark" />`
                   : ""
               }
             </div>
