@@ -43,7 +43,7 @@ const kahootId = new URL(document.location).searchParams.get("id");
           }
 
           choicesArr.push(`
-            <div class="answer">
+            <div class="answer${!choices[a].correct ? " wrong" : ""}">
               <img
                 src="./images/${image}.png"
                 class="${imageClass}"
