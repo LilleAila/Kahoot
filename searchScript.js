@@ -5,10 +5,10 @@ const query = new URL(document.location).searchParams.get("query");
     type: "get",
     url: `https://cors.infiniti20.repl.co/create.kahoot.it/rest/kahoots/?query=${query}`,
     success: function (data) {
-      console.log(data);
+      // console.log(data);
       for (let i = 0; i < data.entities.length; i++) {
         const card = data.entities[i].card;
-        console.log(card);
+        // console.log(card);
         /*let cardElement = $('<a>')
           .attr('href', './answers?id=')
           .text(card.name);*/

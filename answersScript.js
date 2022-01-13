@@ -5,7 +5,7 @@ const kahootId = new URL(document.location).searchParams.get("id");
     type: "GET",
     url: `https://cors.infiniti20.repl.co/create.kahoot.it/rest/kahoots/${kahootId}`,
     success: function (data) {
-      console.log(data);
+      // console.log(data);
       const questions = data.questions;
 
       $(".kahoots").empty();
@@ -14,7 +14,7 @@ const kahootId = new URL(document.location).searchParams.get("id");
         const question = questions[i];
         const choices = question.choices;
         const image = question.image;
-        console.log(question, choices, image);
+        // console.log(question, choices, image);
 
         let choicesArr = [];
 
