@@ -3,7 +3,7 @@ const kahootId = new URL(document.location).searchParams.get("id");
 (() => {
   $.ajax({
     type: "GET",
-    url: `https://cors.olaisolsvik.repl.co/create.kahoot.it/rest/kahoots/${kahootId}`,
+    url: `https://cors.infiniti20.repl.co/create.kahoot.it/rest/kahoots/${kahootId}`,
     success: function (data) {
       console.log(data);
       const questions = data.questions;

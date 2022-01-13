@@ -3,7 +3,7 @@ const query = new URL(document.location).searchParams.get("query");
 (() => {
   $.ajax({
     type: "get",
-    url: `https://cors.olaisolsvik.repl.co/create.kahoot.it/rest/kahoots/?query=${query}`,
+    url: `https://cors.infiniti20.repl.co/create.kahoot.it/rest/kahoots/?query=${query}`,
     success: function (data) {
       console.log(data);
       for (let i = 0; i < data.entities.length; i++) {
